@@ -19,6 +19,6 @@ base64 -d SHA256SUMS.sig > SHA256SUMS.sig.bin
 openssl pkeyutl -verify -pubin -inkey polysia-release.pem -rawin -in SHA256SUMS -sigfile SHA256SUMS.sig.bin
 sha256sum -c --ignore-missing SHA256SUMS
 ```
-`polysia-release.pem` is published on https://docs.polysia.io and embedded in `install.sh`.
+`polysia-release.pem` is embedded in `install.sh` and published on https://polysia.io/security (after the release key ceremony).
 
-Security reports: see https://docs.polysia.io/security
+Security reports: security@polysia.io — see https://polysia.io/security
